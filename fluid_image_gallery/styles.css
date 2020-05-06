@@ -1,0 +1,166 @@
+@import url("reset.css");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #141414;
+  font: normal 16px "Helvetica", sans-serif;
+  color: #F0F0F0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: initial;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  height: 60px;
+  background-color: #000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 0;
+}
+
+nav > ul {
+  display: flex;
+  /* justify-content: space-around; */
+  width: 250px;
+}
+
+nav > ul > li {
+  width: 50px;
+  margin-right: 20px;
+}
+
+.profile-link img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+#settings-toggle {
+  visibility: hidden;
+}
+
+#settings-toggle:checked ~ ul {
+  display: block;
+  height: inherit;
+}
+
+.settings li {
+  width: 100px;
+  background: #fff;
+  color: crimson;
+  padding: 10px;
+  border-bottom: 1px solid #aaa;
+}
+
+.settings li:hover {
+  background-color: #dedede;
+}
+
+.settings i {
+  color: white;
+  display: inline-block;
+  font-size: 1.5rem;
+  padding-top: 15px;
+}
+
+.settings i:hover {
+  color: crimson;
+}
+
+.dropdown {
+  height: 0;
+  display: none;
+}
+
+.container {
+  box-sizing: border-box;
+  text-align: center;
+  /* min-width: 500px; */
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 70px;
+  background-color: #333333;
+  padding: 50px 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+figure {
+  margin-bottom: 30px;
+}
+
+main img {
+  display: block;
+  width: 100%;
+  border: 15px solid #fff;
+  box-sizing: border-box;
+}
+
+figcaption {
+  padding-top: 10px;
+  text-align: left;
+}
+
+main ul {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+main ul img {
+  border-width: 3px;
+}
+
+
+@media (min-width: 600px) {
+  main ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 900px) {
+  main ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: none;
+    width: 100%;
+    margin: 50px 0 0 0;
+    padding-right: 35px;
+  }
+
+  h1 {
+    width: 100%;
+  }
+
+  figure {
+    width: 950px;
+    margin-right: 64px;
+  }
+
+  main ul {
+    flex: 1;
+    grid-template-columns: 1fr;
+  }
+
+}

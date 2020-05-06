@@ -1,0 +1,248 @@
+body {
+  font-size: 16px;
+  font-family: Helvetica;
+  font-weight: 200;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 4rem;
+  word-wrap: wrap;
+}
+
+p {
+  font-size: 2.5rem;
+  padding: 0 20px;
+}
+
+label, legend {
+  color: #000;
+  text-align: center;
+  font-size: 2rem;
+  text-shadow: 1px 2px 2px rgba(33, 33, 33, .05);
+}
+
+li {
+  list-style: none;
+}
+
+li > label {
+  font-size: 1.7rem;
+  margin-left: 5px;
+  line-height: 1.5;
+}
+
+select {
+  width: 50vw;
+  max-width: 550px; 
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 1.7rem;
+  font-weight: 200;
+}
+
+
+#main {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  background-color: #eef;
+  border-radius: 50px;
+}
+
+#description {
+  display: flex;
+  margin: 30px auto 10px auto;
+  font-weight: 400;
+}
+
+#survey-form {
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  padding: 10px 40px;
+}
+
+#basic-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 10px;
+  justify-content: center;
+}
+
+#basic-info label {
+  margin-left: 10px;
+}
+
+#input-name{
+  display: grid;
+  grid-template-columns: 1fr;
+/*  grid-column: span 3;
+*/  grid-row-gap: 10px;
+}
+
+#name-label {
+  text-align: left;
+}
+
+#email-label {
+  text-align: left;
+}
+
+#input-email{
+  display: grid;
+  grid-template-columns: 1fr;
+/*  grid-column: span 3;
+*/  grid-row-gap: 10px;
+}
+
+#input-number{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  justify-content: space-between;
+  grid-column: 1/-1;
+}
+
+#input-number input {
+  padding-left: 10px;
+  width: 15vw;
+}
+
+#input-dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#input-textarea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#about {
+  width: 60vw;
+  height: 33vh;
+  border: none;
+  border-radius: 5px;
+  padding: 30px 30px;
+  background: white;
+  font-size: 1.3rem;
+  font-family: serif;
+}
+
+#input-submit{
+    margin: 10px auto;
+}
+
+#input-submit > button{
+  border: 2px solid black;
+  border-radius: 15px;
+  width: 15vw;
+  height: 10vh;
+  background-color: #fff;
+  font-size: 2rem;
+
+}
+
+#input-submit > button:hover{
+  border: 2px solid blue;
+  color: blue;
+  box-shadow: 1px 2px 2px #2121ff65a;
+}
+
+.section-text {
+  font-weight: 400;
+}
+
+.survey-item{
+  padding: 15px;
+}
+
+.input-basic-info{
+  font-size: 1.8rem;
+  padding: 5px;
+  margin: 10px;
+}
+
+.label-info {
+  display: grid;
+  grid-template-columns: auto;
+  text-align: left;
+}
+
+.survey-section{
+  margin-bottom: 40px;
+}
+
+/*Radio and Checkbox styling*/
+input[type=radio] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input[type=radio]::-ms-check {
+  display: none;
+}
+
+input[type=radio] {
+  position: relative;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid gray;
+  border-radius: 50%;
+  /* Adjusts the position of the checkboxes on the text baseline */ 
+  vertical-align: -2px;
+  /* Set here so that Windows' High-Contrast Mode can override */
+  background-color: white;
+}
+
+input[type=radio]:checked{
+  background-color: #2121ff;
+  outline: none;
+}
+
+input[type=checkbox] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input[type=checkbox]::-ms-check {
+  display: none;
+}
+
+input[type=checkbox] {
+  position: relative;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid gray;
+  /* Adjusts the position of the checkboxes on the text baseline */ 
+  vertical-align: -2px;
+  /* Set here so that Windows' High-Contrast Mode can override */
+  background-color: white;
+}
+
+input[type=checkbox]:checked{
+  background-color: #2121ff;
+  outline: none;
+  content: "X";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
